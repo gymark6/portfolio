@@ -11,12 +11,11 @@ section h2:hover{
     color: #00ffb3;
 }
 .dropdown-menu{
-    background-color: #00ffb3;
+    background-color: lightgray;
 }
 .dropdown-item:hover{
     color: #00ffb3;
     background-color: black;  
-    text-transform: uppercase;
 }
 .nav-item:hover{
     background-color: lightgrey;
