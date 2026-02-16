@@ -31,7 +31,6 @@ section h2:hover{
     text-transform: uppercase;
 }
 .card-text{
-    font-family: sans-serif;
     text-align: justify;
     font-family: 'Times New Roman';
 }
@@ -52,5 +51,14 @@ section h2:hover{
     border: 2px solid #00ffb3;
 }
 
-
+.szak:hover{
+    text-indent: 5px;
+    color: #00ffb3;
+}
+.eler{
+    font-size: 1.2rem;
+}
+.eler:hover{
+    color: #00ffb3;
+}
 
