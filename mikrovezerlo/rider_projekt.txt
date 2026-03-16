@@ -1,0 +1,126 @@
+/*
+ * File: multiplex.c
+ * 
+ *
+ * 
+ */
+#pragma config FOSC = IRC
+#pragma config WDTEN = OFF
+#pragma config LVP = OFF
+
+#include <xc.h>
+
+#define IO_RA5_LAT                  LATAbits.LATA5                              // sarga LED
+#define IO_RB4_LAT                  LATBbits.LATB4                              // zold LED
+
+#define IO_RB5_LAT                  LATBbits.LATB5                              // LEDSOR Tr
+#define IO_RB6_LAT                  LATBbits.LATB6                              // DIS1 Tr
+#define IO_RB7_LAT                  LATBbits.LATB7                              // DIS2 Tr
+
+#define IO_RA1_PORT                 PORTAbits.RA1                               // S2 tact
+#define IO_RA2_PORT                 PORTAbits.RA2                               // S2 tact
+#define IO_RA4_PORT                 PORTAbits.RA4                               // S2 tact
+
+// sajat define
+#define LED_S                       IO_RA5_LAT                                  // sarga LED
+#define LED_Z                       IO_RB4_LAT                                  // zold LED
+
+#define LEDSOR                      IO_RB5_LAT                                  // LEDSOR Tr
+#define DIS_B                       IO_RB7_LAT                                  // DIS1 bal Tr
+#define DIS_J                       IO_RB6_LAT                                  // DIS2 jobb Tr
+
+#define GOMB_B                      IO_RA1_PORT                                 // S2 tact bal
+#define GOMB_K                      IO_RA2_PORT                                 // S2 tact kozep
+#define GOMB_J                      IO_RA4_PORT                                 // S2 tact jobb
+
+void Initialize(void);
+void multiplexeles(void);
+
+unsigned char ledsor_ertek, ido;
+
+
+void main(void) {
+    Initialize();
+    uint8_t irany = 1;
+
+    LEDSOR = 1;
+    
+    ledsor_ertek = 0b00001000;
+    
+    while (1){
+        if (INTCONbits.TMR0IF == 1){
+            multiplexeles(); 
+        }
+        
+        if (ido == 100){
+            ido = 0;
+            
+            if (irany == 0){
+                ledsor_ertek = ledsor_ertek >> 1;
+                if (ledsor_ertek == 0b00000001){
+                    irany = 1;
+                }                   
+            }
+            
+            else{
+                ledsor_ertek = ledsor_ertek << 1;
+                if (ledsor_ertek == 0b10000000){
+                    irany = 0;
+                }
+                    
+            }
+                        
+            
+            //LED_Z = ! LED_Z;
+       }       
+    }          
+}
+
+void multiplexeles(void){
+    INTCONbits.TMR0IF = 0;
+    
+    ido ++;
+    
+    if (LEDSOR == 1){
+        LEDSOR = 0;
+        LATC = 0b01111111;
+        DIS_B = 1;
+        return;      
+    }
+    if (DIS_B == 1){
+        DIS_B = 0;
+        LATC = 0b01111111;
+        DIS_J = 1;
+        return;
+    }
+    if (DIS_J == 1){
+        DIS_J = 0;
+        LATC = ledsor_ertek;
+        LEDSOR = 1;
+        return;
+    }    
+    LED_S = ! LED_S;
+}
+
+
+void Initialize(void)
+{
+    OSCCON = 0b01110010;                                                        // <6:4> orajel
+
+    LATA = 0;
+    LATB = 0;
+    LATC = 0;    
+    
+    TRISA = 0b11011111;
+    TRISB = 0b00001111;
+    TRISC = 0b00000000;
+
+    ANSEL = 0b00000001;
+    ANSELH = 0;
+    
+    T0CON = 0b11000100;
+    return;
+}
+
+
+
