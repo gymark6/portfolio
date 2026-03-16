@@ -14,7 +14,7 @@
     <!-- Bootstrap CSS --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--IKON <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> -->
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -45,8 +45,8 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="plc.html">PLC-programozás</a></li>
-                            <li><a class="dropdown-item" href="mikrovezerlo.html">Mikrovezérlő-programozás</a></li>
-                            <li><a class="dropdown-item dropdown-color" href="#">Rendszerüzemeltetés és IoT</a></li>
+                            <li><a class="dropdown-item dropdown-color" href="#">Mikrovezérlő-programozás</a></li>
+                            <li><a class="dropdown-item" href="riot.html">Rendszerüzemeltetés és IoT</a></li>
                             <li><a class="dropdown-item" href="programozas.html">Programfejlesztés</a></li>
                             <li><a class="dropdown-item" href="adatbazis.html">Adatbázis-kezelés alapjai</a></li>
                             <li><a class="dropdown-item" href="mi.html">Mesterséges intelligencia alapjai</a></li>
@@ -62,9 +62,9 @@
     </nav>
     
     <!-- Hero szekció -->
-    <section class="bg-dark text-white text-center py-5">
+    <section class="bg-dark text-center text-white py-5">
         <div class="hero-section">
-            <h1 class="fw-bold mb-3">Rendszerüzemeltetés és IoT</h1>
+            <h1 class="fw-bold">Mikrovezérlő-programozás</h1>
             <h2 class="fw-light"><span style="color: #00ffb3;">Szakmai ismeretek és Projektmunka</span></h2>
         </div>
     </section>
@@ -79,62 +79,63 @@
                         <div class="card-body p-4">
                             <h2 class="card-title fw-bold mb-3">Szakmai alapok</h2>
                             <div class="card-text">
-                                <p>Ebben a tantárgyban a rendszerek üzemeltetésével és az IoT világával ismerkedtem meg. Megtanultam, hogyan lehet szoftveres logikával fizikai eszközöket irányítani.</p>
-                                <p>Virtualizációnál az Oracle VirtualBoxot használtunk, ahol megtanultam virtuális gépeket létrehozni és kezelni. Ez azért volt jó, mert így biztonságosan kísérletezhettem különböző beállításokkal. A Linux alapjait virtuális gépeken futtatott rendszereken tanultuk meg, ahol a terminál használatával és a fájlrendszer felépítésével ismerkedtünk meg. Itt tanultam meg a terminál használatát és azokat az alapvető parancsokat, amikkel magabiztosan tudok mozogni a fájlrendszerben vagy elvégezni alapbeállításokat. A Node-RED volt a legérdekesebb rész. Megtanultam a Node-RED vizuális felületén logikai folyamatokat (flow-kat) tervezni. Ezzel dolgoztam fel a szenzoradatokat, és így irányítottam az olyan eszközöket is, mint a képen látható Raspberry Pi.</p>
-                                <p>Nagyon tetszett, hogy a gyakorlatban is láthattam, hogyan oldható meg egy bonyolult automatizálási feladat, ha a szoftveres és a hardveres tudás találkozik.</p>
+                                <p>Ebben a tárgyban a Microchip MPLAB X IDE környezetével ismerkedtem meg. Nem a könnyű részével kezdtünk, először Assembly nyelven tanultam programozni, ami bár bonyolultabb, sokat segített abban, hogy megértsem a processzor belső felépítését és a regiszterek pontos működését a C nyelv hatékonyabb programozásához.</p> 
+                                <p>Később C nyelven programoztam, ami sokkal átláthatóbbá és gyorsabbá tette számomra a kódolást. Kipróbáltam az MCC (MPLAB Code Configurator) eszközt is, ami nagy könnyebbség volt, mert automatikusan legenerálta a belső modulokat, például az időzítők és megszakítások alapbeállításait, így nem kellett mindent manuálisan beállítanom.</p>
                             </div>                                                                               
                         </div>
                     </div> 
                 </div> 
                 <div class="col-12 col-md-10 col-xxl-6">
                     <div class="card overflow-hidden">
-                        <img src="riot/rpi.jpg" class="img-fluid" alt="Raspberry">
+                        <img src="mikrovezerlo/mplab_logo.jpg" class="img-fluid" alt="mplab_logo" title="mplab_logo">
                     </div>
                 </div>
             </div>    
         </div>
         <span class="d-block p-1" style="background-color: #79dfc1;"></span>
         <div class="container">
-            <div class="row g-4 g-md-5 py-5 justify-content-center align-items-center">
+            <div class="row g-4 g-md-5 py-5 justify-content-center">
                 <div class="col-12 col-md-12 col-xxl-6"> 
                     <div class="card bg-secondary text-white">
                         <div class="card-body p-4">
-                            <h2 class="card-title fw-bold mb-3">Projekt - Hőmérséklet-riasztó rendszer</h2>
+                            <h2 class="card-title fw-bold mb-3">Projekt - Multiplexelt vezérlés és futófény</h2>
                             <div class="card-text">
-                                <p>A projektemben egy olyan hőmérséklet-riasztót építettem, amely szerverszobák vagy hűtőházak védelmére szolgál. A cél az volt, hogy a rendszer ne csak mérje az adatokat, hanem azonnal jelezzen is, ha túlmelegedést észlel.</p> <p>Hardvere egy Raspberry Pi 5 központi vezérlőegység és egy DS18B20 digitális hőmérsékletszenzor. A szoftveres logikai folyamatokat Node-RED környezetben fejlesztettem ki. A riasztásokat a Telegram Bot segítségével közvetlenül az okostelefonomra kapom meg.</p> 
-                                <p>A rendszer működése során 5 másodpercenként kéri le a szenzor adatait, amelyek egy Dashboard grafikonon jelennek meg. Ha a hőmérséklet átlépi a 30°C-os határértéket, a program automatikusan elküldi a riasztást. Beépítettem egy Trigger node-ot is, ami megakadályozza, hogy a telefonomat elárasszák az üzenetek, ha az érték a határ környékén ingadozik.</p>
-                                <p>A tesztelés során minden hibátlanul működött, a szenzor melegítésére a grafikon azonnal reagált, a határértéknél pedig megérkezett a pontos mérési adat a telefonomra. Ez a projekt segített elmélyíteni a tudásomat az IoT rendszerek és az automatizálás területén.</p>
-                            </div>                                                      
+                                <p>Ehhez a projekthez egy C nyelvű kódot írtam, amivel a tesztpanelen lévő kijelzőket és a LED-sort vezéreltem. A lényeg a multiplexelés volt: a programom olyan gyorsan váltogatja a kijelzők és a LED-ek tápfeszültségét, hogy szabad szemmel nem is látni a villogást, csak azt, hogy minden egyszerre működik. A pontos időzítéshez a Timer0 modult használtam, ez felel azért is, hogy a LED-soron az oda-vissza futófény sebessége egyenletes legyen.</p>
+                                <p>A fény mozgását bitenkénti léptetéssel oldottam meg, ami sokkal elegánsabb és rövidebb megoldás, mintha minden állapotot külön megírtam volna. A fejlesztés alatt sokat fejlődtem abban, hogyan kell a regisztereket (mint a TRIS, a LAT vagy az ANSEL) közvetlenül kezelni, hogy a chip pontosan azt csinálja, amit elterveztem.</p>
+                            </div>                                                       
                         </div>                        
                     </div>
                 </div> 
-                <div class="col-8 col-md-10 col-xxl-6">
-                    <div class="card overflow-hidden ratio ratio-4x3 mb-4 d-none d-md-block">
-                        <iframe src="riot/HRR_gyma.pdf" title="Rendszerüzemeltetés és IoT dokumentáció" allowfullscreen></iframe>
+                <div class="col-12 col-md-10 col-xxl-6">
+                    <div class="card overflow-hidden mb-4">
+                        <video width="100%" height="auto" autoplay loop muted playsinline class="projekt-video">
+                            <source src="mikrovezerlo/kinghtrider_futofeny.mp4" type="video/mp4">
+                            A böngésződ nem támogatja a videók megjelenítését.
+                        </video>
                     </div>
                     <div class="text-light d-flex justify-content-center">
                         <div class="subject-card">
-                            <a href="riot/HRR_gyma.pdf" class="text-decoration-none text-reset d-block" target="blank"><i class="bi bi-file-pdf"></i> Dokumentáció</a>
+                            <a href="Mikrovezerlo/rider_projekt.txt" class="text-decoration-none text-reset d-block" target="blank">Forráskód megtekintése</a>
                         </div> 
                     </div>
                 </div>
             </div> 
-        </div> 
-        <span class="d-block p-1" style="background-color: #79dfc1;"></span> 
+        </div>
+        <span class="d-block p-1" style="background-color: #79dfc1;"></span>
         <div class="container">
             <div class="row g-4 g-md-5 py-5 justify-content-center align-items-center">
                 <div class="col-12 col-md-12 col-xxl-6"> 
                     <div class="card bg-secondary text-white p-4">
                         <h2 class="card-title fw-bold mb-3">Önreflexió</h2>
                         <div class="card-text">
-                            <p>Ebben a tanévben a rendszerüzemeltetés alapjaitól jutottam el egy összetett IoT projekt megvalósításáig. Megtanultam, hogyan építhető fel egy stabil informatikai rendszer a virtuális környezettől kezdve a fizikai eszközök vezérléséig. Oracle VirtualBox segítségével sajátítottam el a virtuális gépek kezelését és a Linux parancssoros használatát. Ma már magabiztosan navigálok a terminálban és végzek el alapvető rendszerbeállításokat. A legnagyobb szakmai kihívást a Raspberry Pi 5 alapú hőmérséklet-riasztó rendszerem megalkotása jelentette. A hardveres bekötés mellett Node-RED környezetben fejlesztettem ki a logikai folyamatokat. Sikerült beépítenem a Telegram Bot-ot is. A stabilitás érdekében Trigger node használatával oldottam meg a spam-védelmet.</p>
-                            <p>Ez az év megtanított arra, hogyan lehet egy valós problémára (például szerverszobák védelme) gyors és hatékony technikai választ adni.</p>
+                            <p>Ez a tantárgy megmutatta nekem, hogy mennyire oda kell figyelnem a legkisebb részletekre is a kódolás közben, mert elég egyetlen elírt regiszter és az egész rendszer megáll. Nagyon érdekes volt látni a különbséget a két módszer között, az Assembly megtanított arra, hogy mi történik valójában a chip belsejében, a C nyelv és az MCC használata pedig megmutatta, hogyan lehet igazán hatékonyan és gyorsan haladni a munkával.</p> 
+                            <p>Sokat segített a tanulásban, hogy a tesztpanelen a LED-ek és a kijelzők segítségével azonnal láttam a visszajelzést, így sokkal könnyebben és gyorsabban meg tudtam találni és ki tudtam javítani a logikai hibákat.</p>
                         </div>                                                         
                     </div>
                 </div> 
                 <div class="col-12 col-md-10 col-xxl-6">
                     <div class="card overflow-hidden">
-                        <img src="riot/rpi1.jpg" class="img-fluid" alt="jovo_erp">
+                        <img src="mikrovezerlo/pic4.jpg" class="img-fluid" alt="MPLAB_program" title="MPLAB_program">
                     </div> 
                 </div>
             </div> 
@@ -147,8 +148,6 @@
     <footer class="bg-dark text-light text-center py-3">
         <span style="color: #00ffb3;">Gyuricza Márk Attila © 2026</span>  
     </footer>
- 
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 </body>

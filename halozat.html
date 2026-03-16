@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Portfólió - Gyuricza Márk Attila</title>
-    <link rel="icon" type="image/png" href="bolyai_logo.PNG">
+    <link rel="icon" type="image/png" href="iskola/bolyai_logo.png">
 
     <!-- Bootstrap CSS --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!--IKON <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,13 +23,13 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container col-12">
             <a class="navbar-brand d-flex align-items-center" href="https://bolyai.bmszc.hu/" target="_blank">
-            <img src="bolyai_logo.png" title="Bolyai címer" width="40" height="40" class="d-inline-block align-text-top"></a>
+            <img src="iskola/bolyai_logo.png" title="Bolyai címer" width="40" height="40" class="d-inline-block align-text-top"></a>
             <a class="navbar-brand fs-5 fw-bold" href="#">Gyuricza Márk Attila <br class="d-md-none"> Technikusi portfóliója</a>   
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fs-6 fw-bold text-dark bg-light">
+                <ul class="navbar-nav ms-auto fs-6 fw-bold bg-light">
                     <li class="nav-item">
                     <a class="nav-link px-3" href="index.html">Kezdőlap</a>
                     </li>
@@ -45,13 +45,14 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="plc.html">PLC-programozás</a></li>
-                            <li><a class="dropdown-item" href="mikro.html">Mikrovezérlő-programozás</a></li>
+                            <li><a class="dropdown-item" href="mikrovezerlo.html">Mikrovezérlő-programozás</a></li>
                             <li><a class="dropdown-item" href="riot.html">Rendszerüzemeltetés és IoT</a></li>
-                            <li><a class="dropdown-item" href="program.html">Programfejlesztés</a></li>
+                            <li><a class="dropdown-item" href="programozas.html">Programfejlesztés</a></li>
                             <li><a class="dropdown-item" href="adatbazis.html">Adatbázis-kezelés alapjai</a></li>
-                            <li><a class="dropdown-item" href="ai.html">Mesterséges intelligencia alapjai</a></li>
-                            <li><a class="dropdown-item" href="#">Hálózatkezelés</a></li>
+                            <li><a class="dropdown-item" href="mi.html">Mesterséges intelligencia alapjai</a></li>
+                            <li><a class="dropdown-item dropdown-color" href="#">Hálózatkezelés</a></li>
                             <li><a class="dropdown-item" href="vallalat.html">Vállalatirányítási rendszerek</a></li>
+                            <li><a class="dropdown-item" href="gyakorlat.html">Szakmai gyakorlat</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -72,77 +73,97 @@
     <section class="content bg-dark">
         <span class="d-block p-1" style="background-color: #79dfc1;"></span>
         <div class="container">
-            <div class="row g-4 g-md-5 pt-5 justify-content-center align-items-center">
+            <div class="row g-4 g-md-5 py-5 justify-content-center align-items-center">
                 <div class="col-12 col-md-12 col-xxl-6"> 
                     <div class="card bg-secondary text-white">
                         <div class="card-body p-4">
                             <h2 class="card-title fw-bold mb-3">Szakmai alapok</h2>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, asperiores? Quidem quia quisquam mollitia cumque minima velit aperiam. At possimus nobis suscipit! Quidem consequuntur repellendus mollitia placeat, perspiciatis animi doloribus, dolorum, assumenda ipsam distinctio dicta soluta omnis non nemo ad molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                <br>Expedita itaque in cum quas tempore atque distinctio doloribus quo voluptas, accusamus ab voluptatem veniam. Officiis assumenda, totam dolorem nostrum quidem asperiores unde rerum, cupiditate sequi eaque optio veritatis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos porro doloribus earum ducimus eaque reprehenderit esse dolorum pariatur, omnis assumenda, sunt officiis qui excepturi cupiditate atque voluptatem?
-                            </p>                                                                               
+                            <div class="card-text">
+                                <p>A hálózatkezelést a Cisco Networking Academy (NetAcad) anyagaiból tanultam meg. Ez sokat segített abban, hogy ne csak az elméletet lássam, hanem azt is, hogyan működnek a hálózatok a valóságban. Megértettem, hogyan épülnek fel a hálózatok az OSI és a TCP/IP modellek alapján, és megtanultam, hogyan kell logikusan összekapcsolni az olyan eszközöket, mint a routerek, a switchek vagy a végponti számítógépek.</p>                               
+                                <p>A gyakorlatban leginkább a Cisco Packet Tracert használtam. Ebben a szimulációs programban saját hálózatokat terveztem és építettem fel virtuálisan. Itt nemcsak az eszközök beállítását gyakoroltam, hanem azt is, hogyan kell megkeresni és kijavítani a hibákat, ha valahol megszakad a kapcsolat a hálózatban.</p>
+                            </div>                                                                               
                         </div>
                     </div> 
                 </div> 
-                <div class="col-12 col-md-10 col-xxl-6">
+                <div class="col-12 col-md-12 col-xxl-6">
                     <div class="card overflow-hidden">
-                        <img src="kép helye" class="img-fluid" alt="teszt">
+                        <img src="halozat/logikai_topolgia.png" class="img-fluid" alt="logikai_topolgia">
                     </div>
                 </div>
             </div>    
         </div>
+        <span class="d-block p-1" style="background-color: #79dfc1;"></span>
         <div class="container">
-            <div class="row g-4 g-md-5 pt-4 justify-content-center align-items-center">
+            <div class="row g-4 g-md-5 pt-5 justify-content-center">
                 <div class="col-12 col-md-12 col-xxl-6"> 
                     <div class="card bg-secondary text-white">
                         <div class="card-body p-4">
-                            <h2 class="card-title fw-bold mb-3">Projekt</h2>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, asperiores? Quidem quia quisquam mollitia cumque minima velit aperiam. At possimus nobis suscipit! Quidem consequuntur repellendus mollitia placeat, perspiciatis animi doloribus, dolorum, assumenda ipsam distinctio dicta soluta omnis non nemo ad molestiae!
-                            </p> 
-                            <p class="card-text">
-                                Vero voluptatibus nam ea. Esse aspernatur, beatae minima libero vero, explicabo quis eaque pariatur illum consequunturipsam   labore, doloribus numquam deleniti in ea modi sapiente sequi ex nam enim necessitatibus earum dolorem soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio voluptates neque sunt rem et pariatur distinctio, incidunt asperiores quod dicta quibusdam, culpa consequuntur accusamus ipsa, velit vel assumenda cumque ratione vero est dolores debitis error eveniet. Magni atque temporibus doloremque dolor nemo tenetur quibusdam, facere eum aliquid nobis aspernatur sed voluptas suscipit quisquam minima distinctio impedit cum accusamus sapiente.
-                            </p>   
-                            <p class="card-text">
-                                Vero voluptatibus nam ea. Esse aspernatur, beatae minima libero vero, explicabo quis eaque pariatur illum consequunturipsam   labore, doloribus numquam deleniti in ea modi sapiente sequi ex nam enim necessitatibus earum dolorem soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            </p>                                                    
-                        </div>    
+                            <h2 class="card-title fw-bold mb-3">Projekt - Kisvállalati hálózat tervezése</h2>
+                            <div class="card-text">
+                                <p>A 12.-es projektben egy közlekedési lámpákat gyártó cég informatikusaként kaptam azt a feladatot, hogy tervezzem meg az új adminisztrációs irodájuk teljes hálózatát. Úgy kellett kialakítanom a rendszert, hogy 12 munkaállomás köztük a vezetői gép és 11 adminisztratív dolgozó munkahelye, valamint 2 hálózati nyomtató stabilan és gyorsan tudjon dolgozni.</p>
+                                <p>A hálózatot Cisco Packet Tracerben építettem fel. Az irodát három szobára és egy külön központi szerverszobára (MDF) osztottam fel, ahol minden helyiségnek saját switch jutott. Beállítottam egy központi routert, négy switchet és egy szervert, amik kiszolgálják az egész irodát. Telepítettem egy vezeték nélküli HomeRoutert is, hogy laptopokkal is lehessen csatlakozni a hálózathoz. Minden eszközhöz egyedi IPv4-es címet rendeltem. Figyeltem az alhálózati maszkokra és az átjárókra, hogy a kommunikáció zavartalan legyen a szobák között.</p>
+                                <p>Nagyon hasznos volt ez a projekt, mert végre megtapasztalhattam, hogyan lesz egy valós irodai igényből egy ténylegesen működő hálózati terv.</p>
+                            </div>                                                      
+                        </div>                        
                     </div>
                 </div> 
                 <div class="col-8 col-md-10 col-xxl-6">
-                    <div class="pdf">
-                        <div class="ratio ratio-4x3 mb-4 d-none d-md-block">
-                            <p style="color: aliceblue; text-align: center;">pdf</p>
-                        </div> 
-                    </div> 
-                    <div class="text-light text-center">
+                    <div class="card overflow-hidden ratio ratio-4x3 mb-4 d-none d-md-block">
+                        <iframe src="halozat/Projektmunka_I.pdf" title="Hálózatkezelés projekt 1" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-light text-center d-flex justify-content-center">
                         <div class="subject-card">
-                            <p>teszt</p>
+                            <a href="halozat/Projektmunka_I.pdf" class="text-decoration-none text-reset d-block" target="blank"><i class="bi bi-file-pdf"></i> Dokumentáció</a>
                         </div> 
                     </div>
                 </div>
             </div> 
         </div>  
         <div class="container">
-            <div class="row g-4 g-md-5 py-4 justify-content-center align-items-center">
+            <div class="row g-4 g-md-5 py-5 justify-content-center">
                 <div class="col-12 col-md-12 col-xxl-6"> 
                     <div class="card bg-secondary text-white">
                         <div class="card-body p-4">
-                            <h2 class="card-title fw-bold mb-3">Önreflexió</h2>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, asperiores? Quidem quia quisquam mollitia cumque minima velit aperiam. At possimus nobis suscipit! Quidem consequuntur repellendus mollitia placeat, perspiciatis animi doloribus, dolorum, assumenda ipsam distinctio dicta soluta omnis non nemo ad molestiae!
-                            </p>                                                       
-                        </div>    
+                            <h2 class="card-title fw-bold mb-3">Projekt - Két telephelyes hálózat tervezése</h2>
+                            <div class="card-text">
+                                <p>A 13.-os projektben egy osztálytársammal közösen a „Csinszka Csomag” nevű futárszolgálat teljes informatikai hálózatát terveztük meg és konfiguráltuk be. A feladatunk egy két telephelyes (Budapest és Gyöngyös) rendszer kialakítása volt, ahol a két város közötti adatforgalmat és a helyi igényeket is ki kellett szolgálnunk.</p>
+                                <p>A telephelyek összekötésénél, Budapest és Gyöngyös között egy soros (Serial) vonalon keresztül hoztunk létre kapcsolatot. A két router között statikus útválasztást állítottunk be, hogy a csomagok pontosan célba érjenek a két város között. A budapesti központban ez a telephely a nagyobb, itt 32 darab PC-t és 3 switchet helyeztünk el. A hálózatot több alhálózatra bontottuk, és DHCP pool-okat hoztunk létre, hogy az eszközök automatikusan kapjanak IP-címet. A gyöngyösi telephelynél pedig a szervereké és a mobilitásé volt a főszerep. Beüzemeltünk két szervert és egy routert, amely WIFI hozzáférést biztosít a laptopok és 15 további kliens számára. Összetett IP-címzésnél különböző maszkokat ( /24, /27, /28, /29, /30) használtunk, hogy a lehető leggazdaságosabban osszuk ki a címeket, elkerülve a pazarlást.</p>
+                                <p>Ez a projekt sokat tanított arról, hogyan kell skálázni egy hálózatot, és milyen kihívásokkal jár két távoli telephely biztonságos és stabil összekapcsolása.</p>
+                            </div>                                                      
+                        </div>                        
                     </div>
                 </div> 
-                <div class="col-12 col-md-10 col-xxl-6">
-                    <div class="text-light text-center card">
-                        teszt
+                <div class="col-8 col-md-10 col-xxl-6">
+                    <div class="card overflow-hidden ratio ratio-4x3 mb-4 d-none d-md-block">
+                        <iframe src="halozat/Projektmunka_II.pdf" title="Hálózatkezelés projekt 2" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-light text-center d-flex justify-content-center">
+                        <div class="subject-card">
+                            <a href="halozat/Projektmunka_II.pdf" class="text-decoration-none text-reset d-block" target="blank"><i class="bi bi-file-pdf"></i> Dokumentáció</a>
+                        </div> 
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <span class="d-block p-1" style="background-color: #79dfc1;"></span>
+        <div class="container">
+            <div class="row g-4 g-md-5 py-5 justify-content-center align-items-center">
+                <div class="col-12 col-md-8 col-xxl-8"> 
+                    <div class="card bg-secondary text-white p-4">
+                        <h2 class="card-title fw-bold mb-3">Önreflexió</h2>
+                        <div class="card-text">
+                            <p>A hálózatkezelés tantárgy keretében Cisco Networking Academy (NetAcad) tananyagára építve sajátítottam el a modern hálózatok alapjait. Az elméleti tudást,  mint az OSI és TCP/IP modellek rétegeit,  két nagy projekten keresztül alkalmazhattam a gyakorlatban, ami segített megérteni a hálózati eszközök közötti logikai kapcsolatokat.</p>
+                            <p>A két év alatt megtett út során a kezdeti bizonytalanságot felváltotta a magabiztos eszközhasználat. Megtanultam, hogyan kell egy valós üzleti igényt technikai tervvé alakítani, legyen szó egy kisebb irodáról vagy egy többvárosos hálózati infrastruktúráról.</p>
+                        </div>                                                         
+                    </div>
+                </div> 
+                <div class="col-12 col-md-4 col-xxl-4">
+                    <div class="card overflow-hidden">
+                        <img src="halozat/cisco_logo.jpg" class="img-fluid" alt="cisco_logo">
                     </div> 
                 </div>
             </div> 
         </div>
-
         <span class="d-block p-1" style="background-color: #79dfc1;"></span>        
 
     </section>

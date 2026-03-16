@@ -1,8 +1,5 @@
-body{
-    background-color: #212529;
-}
 nav{
-    background-color: #0dd49b ;      /* #79dfc1, #00ffb3 #212529*/
+    background-color: #0dd49b ;
 }
 section h2 {
     color: #79dfc1;
@@ -10,22 +7,40 @@ section h2 {
 section h2:hover{
     color: #00ffb3;
 }
+.navbar-nav{
+    border: solid 1.5px black;
+}
 .dropdown-menu{
     background-color: lightgray;
+    border-radius: 10px;
+}
+.dropdown-color{
+    color: #00ffb3;
+    background-color: black; 
+}
+.dropdown-menu li {
+    margin-bottom: 4px;
+}
+.dropdown-menu li:last-child {
+    margin-bottom: 0px;
+}
+.dropdown-item {
+    border-radius: 10px;
+    transition: all 0.5s ease;
 }
 .dropdown-item:hover{
     color: #00ffb3;
     background-color: black;  
+    border-radius: 10px;  
 }
 .nav-item:hover{
-    background-color: lightgrey;
+    background-color: lightgray;
 }
 .change{
-    background-color: lightgrey;
+    background-color: lightgray;
 }
 .card{
     border: 2px solid #00ffb3;
-    background-color: black;
 }
 .card-title{
     text-transform: uppercase;
@@ -49,11 +64,7 @@ section h2:hover{
 .subject-card:hover{
     color: #00ffb3 ;
     border: 2px solid #00ffb3;
-}
-
-.szak:hover{
-    text-indent: 5px;
-    color: #00ffb3;
+    box-shadow: 0px 0px 15px #00ffb3
 }
 .eler{
     font-size: 1.2rem;
@@ -69,4 +80,10 @@ section h2:hover{
 }
 .polski:hover{
     color: #79dfc1;
+}
+.navbar-nav, h1, h2{
+    letter-spacing: 0.5px;
+}
+p, .subject-card{
+    letter-spacing: 0.2px;
 }
