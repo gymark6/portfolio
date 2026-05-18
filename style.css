@@ -1,5 +1,5 @@
 nav{
-    background-color: #0dd49b ;
+    background-color: #0dd49b;
 }
 section h2 {
     color: #79dfc1;
@@ -26,7 +26,7 @@ section h2:hover{
 }
 .dropdown-item {
     border-radius: 10px;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 .dropdown-item:hover{
     color: #00ffb3;
@@ -65,18 +65,17 @@ section h2:hover{
 .subject-card:hover{
     color: #00ffb3 ;
     border: 2px solid #00ffb3;
-    box-shadow: 0px 0px 15px #00ffb3
+    box-shadow: 0px 0px 15px #00ffb3;
 }
-.eler{
+.contact{
     font-size: 1.2rem;
     text-align: left;
 }
-.eler:hover{
+.contact:hover{
     color: #00ffb3;
 }
 .polski{
     text-decoration: none;
-    text-decoration-line: none;
     color: lightblue;
 }
 .polski:hover{

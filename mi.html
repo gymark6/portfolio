@@ -5,26 +5,22 @@
     <meta name="author" content="Gyuricza Márk Attila">
     <meta name="description" content="Gyuricza Márk Attila Ipari informatikai technikus portfóliója">
     <meta name="keywords" content="Gyuricza Márk Attila, ipari informatika, technikus, portfólió, PLC, Mikrovezérlő, Rendszerüzemeltetés és IoT, Programfejlesztés, Adatbázis-kezelés alapjai, Mesterséges intelligencia alapjai, Hálózatkezelés, Vállalatirányítási rendszerek, BMSzC Bolyai">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Portfólió - Gyuricza Márk Attila</title>
     <link rel="icon" type="image/png" href="iskola/bolyai_logo.png">
 
-    <!-- Bootstrap CSS --> 
+    <!-- Bootstrap, CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!--IKON <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> -->
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Menüsor -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container col-12">
+        <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="https://bolyai.bmszc.hu/" target="_blank">
-            <img src="iskola/bolyai_logo.png" title="Bolyai címer" width="40" height="40" class="d-inline-block align-text-top"></a>
-            <a class="navbar-brand fs-5 fw-bold" href="#">Gyuricza Márk Attila <br class="d-md-none"> Technikusi portfóliója</a>   
+            <img src="iskola/bolyai_logo.png" title="Bolyai címer" width="40" height="40"></a>
+            <a class="navbar-brand fs-5 fw-bold" href="#">Gyuricza Márk Attila <br class="d-md-none"> Technikusi portfólió</a>   
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,16 +52,17 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
-            
+            </div>  
         </div>
     </nav>
-    
+
     <!-- Hero szekció -->
-    <section class="bg-dark text-center text-white py-5">
-        <div class="hero-section">
-            <h1 class="fw-bold">Mesterséges intelligencia alapjai</h1>
-            <h2 class="fw-light"><span style="color: #00ffb3;">Szakmai ismeretek és Projektmunka</span></h2>
+    <section class="bg-dark text-white text-center py-5">
+        <div class="container"> 
+            <h1 class="fw-bold mb-3">Mesterséges intelligencia alapjai</h1>
+            <h2 class="fw-light">
+            <span style="color: #00ffb3;">Szakmai ismeretek és Projektmunka</span>
+            </h2>
         </div>
     </section>
 
@@ -79,7 +76,7 @@
                         <div class="card-body p-4">
                             <h2 class="card-title fw-bold mb-3">Szakmai alapok</h2>
                             <div class="card-text">
-                                <p>Ebben a tantárgyban tanultam meg, hogyan működik valójában a mesterséges intelligencia, és hogyan tudom segédeszközként használni a munkáimhoz. A programozáshoz a PyCharmot használtuk, ahol Python nyelven teszteltünk különböző MI-algoritmusokat és adatfeldolgozási folyamatokat. A tanulás közben olyan modern platformokat is kipróbáltunk, mint a SteamProgramEdu, ami sokat segített az alapok átekintésében. </p>
+                                <p>A mesterséges intelligencia tantárgy keretein belül tanultam meg, hogyan működik az MI, és miként tudom segédeszközként használni a munkáim során. A programozáshoz a PyCharmot használtuk, ahol Python nyelven teszteltünk különböző MI-algoritmusokat és adatfeldolgozási folyamatokat. A tanulás közben olyan modern platformokat is kipróbáltunk, mint a SteamProgramEdu, ami sokat segített az alapok átekintésében. </p>
                                 <p>Ami viszont a legérdekesebb volt számomra, az a Google NotebookLM használata. Érdekes volt látni, hogy ez az eszköz milyen gyorsan átlát többoldalas dokumentumokat, összefoglalja a lényeget, és válaszol a kérdéseimre. Ez a módszer rengeteg időt spórolt meg nekem a kutatásban és a tananyag feldolgozásában és megmutatta, hogyan tehetem sokkal hatékonyabbá a mindennapi tanulásomat.</p>
                             </div>                                                                               
                         </div>
@@ -87,7 +84,7 @@
                 </div> 
                 <div class="col-12 col-md-10 col-xxl-6">
                     <div class="card overflow-hidden">
-                        <img src="mi/pycharm.jpg" class="img-fluid" alt="pycharm_logo">
+                        <img src="mi/pycharm.jpg" class="img-fluid" alt="Pycharm logó">
                     </div>
                 </div>
             </div>    
@@ -100,7 +97,7 @@
                         <div class="card-body p-4">
                             <h2 class="card-title fw-bold mb-3">Projekt - Autó keresése szín alapján</h2>
                             <div class="card-text">
-                                <p>Ebben a projektben egy olyan Python kódot írtam az OpenCV könyvtár segítségével, ami képes felismerni és kiemelni egy tárgyat a színe alapján. A teszteléshez egy narancssárga kisautót használtam.</p>
+                                <p>A projektben egy olyan Python kódot írtam az OpenCV könyvtár segítségével, ami képes felismerni és kiemelni egy tárgyat a színe alapján. A teszteléshez egy narancssárga kisautót használtam.</p>
                                 <p>A program lényege, hogy a képet először átalakítottam HSV formátumba, mert ez sokkal biztosabb eredményt ad, ha változnak a fények vagy az árnyékok. Készítettem a programhoz hat darab csúszkát (Trackbars) is, amikkel élőben tudtam addig finomítani a színtartományt, amíg a gép már csak az autót látta.</p>
                                 <p>A beállítások után a program létrehozott egy fekete-fehér maszkot, ami pontosan kijelölte az autó körvonalait, majd egy bitenkénti művelettel ezzel a maszkkal vágtam ki az autót az eredeti képből. Használtam egy saját segédfüggvényt is, ami egyszerre mutatja nekem a fázisokat (eredeti kép, maszk, végeredmény), így sokkal gyorsabb volt a hibakeresés és a beállítás.</p>
                             </div>
@@ -109,47 +106,36 @@
                 </div> 
                 <div class="col-12 col-md-10 col-xxl-6">
                     <div class="card overflow-hidden mb-4">
-                        <img src="mi/projekt_szinkezeles.jpg" class="img-fluid" alt="projekt_szinkezeles">
+                        <img src="mi/projekt_szinkezeles.jpg" class="img-fluid" alt="Projekt színkezelés">
                     </div>
                     <div class="text-light d-flex justify-content-center">
                         <div class="subject-card" style="width: 250px;">
-                            <a href="mi/szinkezeles_kod.txt" class="text-decoration-none text-reset d-block stretched-link" target="blank"><i class="bi bi-file-pdf"></i> Programkód</a>
+                            <a href="mi/szinkezeles_kod.txt" class="text-decoration-none text-reset d-block stretched-link" target="_blank">Programkód</a>
                         </div> 
                     </div>
-                </div>
-                <div class="col-12 col-md-10 col-xxl-6"> 
-                    <div class="card overflow-hidden">
-                        <img src="mi/2.jpg" class="img-fluid" alt="teszt" title="teszt">
-                    </div>
-                </div> 
-                <div class="col-12 col-md-10 col-xxl-6">
-                    <div class="card overflow-hidden">
-                        <img src="mi/3.jpg" class="img-fluid" alt="teszt" title="teszt">
-                    </div> 
                 </div>
             </div> 
         </div>
         <span class="d-block p-1" style="background-color: #79dfc1;"></span>  
         <div class="container">
             <div class="row g-4 g-md-5 py-5 justify-content-center align-items-center">
-                <div class="col-12 col-md-12 col-xxl-6"> 
+                <div class="col-12 col-md-12 col-xxl-8"> 
                     <div class="card bg-secondary text-white p-4">
                         <h2 class="card-title fw-bold mb-3">Önreflexió</h2>
                         <div class="card-text">
-                                <p>Ez a tantárgy segített megérteni, hogy az MI egy olyan szuper eszköz, amivel rengeteg időt spórolhatok. Megtanultam, hogyan írjak pontosabb utasításokat, hogy ne csak kérdezgessem a gépet, hanem irányítsam is a munkáját.</p>
+                                <p>Ez a tantárgy segített megérteni, hogy a mesterséges intelligencia egy olyan szuper eszköz, amivel rengeteg időt spórolhatok. Megtanultam, hogyan írjak pontosabb utasításokat, hogy ne csak kérdezgessem a gépet, hanem irányítsam is a munkáját.</p>
                                 <p>A NotebookLM-nél tapasztaltam meg igazán, milyen gyorsan képes az MI feldolgozni egy nehéz tananyagot, az autós projektnél pedig végre átláttam, hogyan „látnak” a gépek a valóságban. Ez a tantárgy felkészített arra, hogy ne csak kövessem a technológiai újdonságokat, hanem bátran és profin használjam is őket a munkám során.</p>
                             </div>                                                         
                     </div>
                 </div> 
-                <div class="col-12 col-md-10 col-xxl-6">
+                <div class="col-12 col-md-10 col-xxl-4">
                     <div class="card overflow-hidden">
-                        <img src="mi/ai-human.jpg" class="img-fluid" alt="teszt" title="teszt">
+                        <img src="mi/szinekezeles.jpg" class="img-fluid" alt="Ai-Human">
                     </div> 
                 </div>
             </div> 
         </div>
         <span class="d-block p-1" style="background-color: #79dfc1;"></span>        
-
     </section>
     
     <!-- Footer -->
@@ -157,6 +143,7 @@
         <span style="color: #00ffb3;">Gyuricza Márk Attila © 2026</span>  
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 </body>
 </html>
